@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahi Studio & Videos</title>
+<style>
+    @keyframes slideImage {
+        0% { opacity: 0; }
+        5% { opacity: 1; }
+        95% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url('pexels-tirachard-kumtanom-112571-733853.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    header {
+        background-color: rgba(0, 51, 102, 0.8); /* Dark Blue */
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        margin: 0;
+        display: inline-block;
+        white-space: nowrap;
+        animation: rollingText 10s linear infinite;
+    }
+    .logo {
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        width: 150px; /* Increase the width as needed */
+        height: 80px; /* Increase the height as needed */
+    }
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        background-color: rgba(0, 102, 204, 0.8); /* Blue */
+        padding-right: 20px;
+    }
+    nav a {
+        color: #fff;
+        padding: 15px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    nav a:hover {
+        background-color: rgba(0, 153, 255, 0.8); /* Light Blue */
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 20px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        background-color: rgba(0, 51, 102, 0.8); /* Dark Blue */
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    .slideshow-container {
+        position: relative;
+        max-width: 100%;
+        height: 500px; /* Adjust height as needed */
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .slideshow-image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%; /* Adjust width as needed */
+        height: 100%; /* Adjust height as needed */
+        opacity: 0;
+        animation: slideImage 15s linear infinite;
+    }
+    .slideshow-image:nth-child(1) {
+        animation-delay: 0s;
+    }
+    .slideshow-image:nth-child(2) {
+        animation-delay: 5s;
+    }
+    .slideshow-image:nth-child(3) {
+        animation-delay: 10s;
+    }
+    section {
+        margin-bottom: 20px;
+    }
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: rgba(0, 51, 102, 0.8); /* Dark Blue */
+        color: #fff;
+    }
+    @keyframes rollingText {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+    @media (max-width: 900px) {
+        .carousel {
+            max-width: 100%;
+        }
+    }
+    @media (max-width: 600px) {
+        nav {
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 0;
+        }
+        nav a {
+            padding: 10px;
+        }
+        .content {
+            padding: 10px;
+        }
+    }
+</style>
+</head>
+<body>
+<header>
+    <img src="logo.jpg" alt="Mahi Studio Logo" class="logo">
+    <h1>Mahi Studio & Videos</h1>
+</header>
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#staff">Staff</a>
+    <a href="#contact">Contact</a>
+</nav>
+<main>
+    <div class="slideshow-container">
+        <img src="Top1.jpg" class="slideshow-image" alt="Slideshow Image 1" style="width: 150%; height: 150%;">
+        <img src="Top3.jpg" class="slideshow-image" alt="Slideshow Image 2" style="width: 100%; height: 100%;">
+        <img src="Top4.jpg" class="slideshow-image" alt="Slideshow Image 3" style="width: 100%; height: 100%;">
+    </div>
+    <div class="content">
+        <section id="about">
+            <h2>About Mahi Studio & Videos</h2>
+            <p>Welcome to Mahi Studio & Videos, where we capture your precious moments with utmost precision and creativity. Our studio is equipped with state-of-the-art technology and operated by professionals who are passionate about photography and videography. We specialize in a variety of services including wedding photography, corporate events, portrait sessions, and much more. Let us help you preserve your memories in the most beautiful way possible.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Wedding Photography</li>
+                <li>Candid Photography</li>
+                <li>Portrait Sessions</li>
+                <li>Family Photo Shoots</li>
+                <li>Videography Services</li>
+                <li>Canvera Albums</li>
+                <li>Candid Videography</li>
+                <li>Corporate Event Coverage</li>
+                <li>Personal Photo Shoots</li>
+                <li>Model shoot</li>
+                <li>Photo Editing and Retouching</li>
+            </ul>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Check out some of our latest work:</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                <img src="Side1.jpg" alt="Portfolio Image 1" style="width: 385px; height: 500px; object-fit: cover;">
+                <img src="Side2.jpg" alt="Portfolio Image 2" style="width: 385px; height: 500px; object-fit: cover;">
+                <img src="Side3.jpg" alt="Portfolio Image 3" style="width: 385px; height: 500px; object-fit: cover;">
+                <img src="Side4.jpg" alt="Portfolio Image 4" style="width: 385px; height: 500px; object-fit: cover;">
+                <img src="Slide5.jpg" alt="Portfolio Image 5" style="width: 385px; height: 500px; object-fit: cover;">
+                <img src="Slide6.jpg" alt="Portfolio Image 5" style="width: 385px; height: 500px; object-fit: cover;">
+            </div>
+        </section>
+        <section id="staff">
+            <h2>Our Staff</h2>
+            <p>Meet our dedicated team of professionals:</p>
+            <ul>
+                <li><strong>B Siva:</strong> Lead Photographer & Videographer</li>
+                <li><strong>Rajesh:</strong> Photo Editor</li>
+                <li><strong>Tanuja:</strong> Photo Editor</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>If you have any inquiries or would like to book our services, please reach out to us:</p>
+            <p><strong>Phone:</strong> 9866799932</p>
+            <p><strong>Email:</strong> mailtomahistudiovideos@gmail.com</p>
+            <p><strong>Address:</strong> NTR Nagar, 4th bit, Yadav Street, Nellore, Andhra Pradesh - 524002</p>
+        </section>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2024 Mahi Studio & Videos. All rights reserved.</p>
+</footer>
+</body>
+</html>
